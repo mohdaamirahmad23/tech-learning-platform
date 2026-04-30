@@ -91,18 +91,20 @@ const QuizPage = () => {
   const currentQuiz = quizData[domainId] || quizData["web-dev"];
   const totalQuestions = currentQuiz.questions.length;
 
-  const saveToBackend = async (certificateData) => {
-    try {
-      const response = await fetch('http://localhost:5000/api/certificates', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(certificateData)
-      });
-      if (response.ok) console.log('✅ Certificate saved to database');
-    } catch (error) {
-      console.error('❌ Error saving to backend:', error);
-    }
-  };
+ const saveToBackend = async (certificateData) => {
+  try {
+    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+    const response = await fetch(`${API_URL}/api/certificates`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(certificateData)
+    });
+    if (response.ok) console.log('✅ Certificate saved to database');
+    else console.log('❌ Failed:', await response.json());
+  } catch (error) {
+    console.error('❌ Error saving to backend:', error);
+  }
+};
 
   useEffect(() => {
     if (timeLeft > 0 && !showScore) {
