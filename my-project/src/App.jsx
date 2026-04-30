@@ -7,6 +7,7 @@ import DomainDetail from './pages/DomainDetail';
 import QuizPage from './pages/QuizPage';
 import CommunityPage from './pages/CommunityPage';
 import LoginPage from './pages/LoginPage'; // ✅ ADD: Import LoginPage
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/quiz/:domainId" element={<QuizPage />} />
           <Route path="/community" element={<CommunityPage />} />
           <Route path="/login" element={<LoginPage />} /> {/* ✅ ADD: Login route */}
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
     </Router>

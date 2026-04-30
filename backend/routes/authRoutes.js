@@ -24,7 +24,11 @@ router.post("/signup", async (req, res) => {
     res.status(201).json({
       message: "Signup successful",
       token,
-      user: { fullName: user.fullName, email: user.email },
+      user: { 
+        _id: user._id,        // ✅ ADDED
+        fullName: user.fullName, 
+        email: user.email 
+      },
     });
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message });
@@ -51,7 +55,11 @@ router.post("/login", async (req, res) => {
     res.json({
       message: "Login successful",
       token,
-      user: { fullName: user.fullName, email: user.email },
+      user: { 
+        _id: user._id,        // ✅ ADDED
+        fullName: user.fullName, 
+        email: user.email 
+      },
     });
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message });

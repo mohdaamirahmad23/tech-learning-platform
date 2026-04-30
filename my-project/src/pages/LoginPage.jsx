@@ -13,16 +13,11 @@ const LoginPage = () => {
   const [rememberMe, setRememberMe] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  // 🔹 Handle input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // 🔹 Handle form submit
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -40,9 +35,7 @@ const LoginPage = () => {
 
       const response = await fetch(url, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
@@ -54,13 +47,15 @@ const LoginPage = () => {
         return;
       }
 
-      // ✅ Save auth info in localStorage
+      // ✅ Poora user object save karo (_id bhi included hoga)
+      localStorage.setItem("user", JSON.stringify(data.user));
+
+      // Baki fields bhi rakho (Navbar ke liye)
       localStorage.setItem("isAuthenticated", "true");
       localStorage.setItem("userEmail", data.user.email);
       localStorage.setItem("token", data.token);
       localStorage.setItem("userName", data.user.fullName);
 
-      // 🔄 Update auth state globally
       window.dispatchEvent(new Event("storage"));
       window.dispatchEvent(
         new CustomEvent("authStateChanged", {
@@ -87,19 +82,13 @@ const LoginPage = () => {
     }
   };
 
-  const handleSocialLogin = (provider) => {
-    console.log(`${provider} login clicked`);
-  };
-
   const handleForgotPassword = () => {
     alert("Forgot password functionality coming soon!");
   };
 
-  // 🔹 UI (same as before)
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
-        {/* Header */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl shadow-2xl mb-4">
             <span className="text-2xl font-bold text-white">TL</span>
@@ -114,9 +103,7 @@ const LoginPage = () => {
           </p>
         </div>
 
-        {/* Auth Card */}
         <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl p-8 shadow-2xl">
-          {/* Tabs */}
           <div className="flex bg-white/5 rounded-2xl p-1 mb-8">
             <button
               onClick={() => setIsLogin(true)}
@@ -140,7 +127,6 @@ const LoginPage = () => {
             </button>
           </div>
 
-          {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
             {!isLogin && (
               <div>
@@ -206,7 +192,6 @@ const LoginPage = () => {
               </div>
             )}
 
-            {/* Remember Me + Forgot Password */}
             <div className="flex items-center justify-between">
               <label className="flex items-center space-x-2 text-gray-300 text-sm">
                 <input
@@ -228,7 +213,6 @@ const LoginPage = () => {
               )}
             </div>
 
-            {/* Submit */}
             <button
               type="submit"
               disabled={isLoading}

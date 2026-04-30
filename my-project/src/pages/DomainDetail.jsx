@@ -29,7 +29,7 @@ const DomainDetail = () => {
           id: 1,
           title: "Web Development Full Course (HTML, CSS, JS, React)",
           link: "https://www.youtube.com/embed/Q33KBiDriJY",
-          duration: "4:40:00",
+          duration: "10:20:00",
           notes: [
             "HTML & CSS basics",
             "JavaScript fundamentals",
@@ -41,7 +41,7 @@ const DomainDetail = () => {
           id: 2,
           title: "React.js Crash Course 2025",
           link: "https://www.youtube.com/embed/w7ejDZ8SWv8",
-          duration: "2:05:00",
+          duration: "1:48:00",
           notes: [
             "React components & hooks",
             "Router setup",
@@ -53,7 +53,7 @@ const DomainDetail = () => {
           id: 3,
           title: "Node.js + Express + MongoDB Full Stack App",
           link: "https://www.youtube.com/embed/Oe421EPjeBE",
-          duration: "3:15:00",
+          duration: "8:16:00",
           notes: [
             "Express server setup",
             "MongoDB integration",
