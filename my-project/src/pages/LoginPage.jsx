@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+const API_URL = import.meta.env.VITE_API_URL;
 const LoginPage = () => {
   const navigate = useNavigate();
   const [isLogin, setIsLogin] = useState(true);
@@ -23,9 +24,9 @@ const LoginPage = () => {
     setIsLoading(true);
 
     try {
-      const url = isLogin
-        ? "http://localhost:5000/api/auth/login"
-        : "http://localhost:5000/api/auth/signup";
+  const url = isLogin
+  ? `${API_URL}/api/auth/login`
+  : `${API_URL}/api/auth/signup`;
 
       if (!isLogin && formData.password !== formData.confirmPassword) {
         alert("Passwords do not match!");

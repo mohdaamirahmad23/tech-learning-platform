@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';  
 
+const API_URL = import.meta.env.VITE_API_URL;
 const ContactPage = () => {
   const navigate = useNavigate(); 
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
@@ -11,7 +12,7 @@ const ContactPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:5000/api/contact', {
+      const res = await fetch(`${API_URL}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
