@@ -265,7 +265,7 @@ const saveCertificateToStorage = async (certificateData) => {
 <body>
   <div class="certificate">
     <div class="inner-border"></div>
-    <div class="logo">🎓 Tech Learn</div>
+    <div class="logo">🎓 Tech Fusion</div>
     <h1 class="title">Certificate of Completion</h1>
     <p class="subtitle">This is to certify that</p>
     <div class="username">${certificateData.userName}</div>
@@ -288,7 +288,7 @@ const saveCertificateToStorage = async (certificateData) => {
     <div class="footer">
       <div class="signature">
         <div class="signature-line"></div>
-        <div class="signature-text">Tech Learn Team</div>
+        <div class="signature-text">Tech Fusion Team</div>
       </div>
       <div class="signature">
         <div class="signature-line"></div>
@@ -358,7 +358,7 @@ const saveCertificateToStorage = async (certificateData) => {
         <div ref={certRef} style={{ background: 'white', borderRadius: '20px', padding: '40px', boxShadow: '0 20px 60px rgba(0,0,0,0.3)', border: '8px solid #f59e0b', position: 'relative', width: '100%', maxWidth: '800px' }}>
           <div className="absolute inset-1 border-4 border-yellow-300 rounded-xl pointer-events-none"></div>
           <div className="text-center">
-            <div className="text-2xl font-black text-gray-900 mb-2">🎓 Tech Learn</div>
+            <div className="text-2xl font-black text-gray-900 mb-2">🎓 Tech Fusion</div>
             <h1 className="text-4xl font-black text-gray-900 mb-6 uppercase tracking-wide">Certificate of Completion</h1>
             <p className="text-lg text-gray-600 mb-10 font-medium">This is to certify that</p>
             <div className="text-5xl font-black text-yellow-600 my-10 uppercase tracking-wide">{userName}</div>
@@ -379,7 +379,7 @@ const saveCertificateToStorage = async (certificateData) => {
             </div>
             <div className="text-gray-500 mt-8">Awarded on: {new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}</div>
             <div className="flex justify-between mt-12 pt-6 border-t-2 border-gray-300">
-              <div className="text-center"><div className="w-48 h-0.5 bg-gray-800 mx-auto mb-2"></div><div>Tech Learn Team</div></div>
+              <div className="text-center"><div className="w-48 h-0.5 bg-gray-800 mx-auto mb-2"></div><div>Tech Fusion Team</div></div>
               <div className="text-center"><div className="w-48 h-0.5 bg-gray-800 mx-auto mb-2"></div><div>Certificate ID: {Date.now().toString().slice(-8)}</div></div>
             </div>
           </div>

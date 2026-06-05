@@ -229,7 +229,7 @@ const ContactPage = () => {
             <span style={{ color: 'rgba(255,255,255,0.55)', fontSize: 13 }}>We're here to help</span>
           </div>
           <h1 className="contact-hero-title">Contact <span>Us</span></h1>
-          <p className="contact-slogan">"Nothing is impossible when <strong>Tech Learn</strong> is with you"</p>
+          <p className="contact-slogan">"Nothing is impossible when <strong>Tech Fusion</strong> is with you"</p>
           <p className="contact-hero-sub">Have questions or feedback? Drop us a message — we'd love to hear from you.</p>
         </section>
 
@@ -244,7 +244,7 @@ const ContactPage = () => {
               <div className="contact-card-icon">📞</div>
               <div>
                 <div className="contact-card-label">Phone</div>
-                <div className="contact-card-value">+91 7017051229</div>
+                <div className="contact-card-value">+91 9634666294</div>
                 <div className="contact-card-sub">Mon – Sat, 10am – 7pm IST</div>
               </div>
             </div>
@@ -253,7 +253,7 @@ const ContactPage = () => {
               <div className="contact-card-icon">✉️</div>
               <div>
                 <div className="contact-card-label">Email</div>
-                <div className="contact-card-value">techlearn@gmail.com</div>
+                <div className="contact-card-value">aamirahmadtechlearn@gmail.com</div>
                 <div className="contact-card-sub">Reply within 24 hours</div>
               </div>
             </div>
@@ -262,7 +262,7 @@ const ContactPage = () => {
               <div className="contact-card-icon">💬</div>
               <div>
                 <div className="contact-card-label">WhatsApp</div>
-                <div className="contact-card-value">+91 7017051229</div>
+                <div className="contact-card-value">+91 9634666294</div>
                 <div className="contact-card-sub">Quick support available</div>
               </div>
             </div>
@@ -271,7 +271,7 @@ const ContactPage = () => {
               <div className="contact-card-icon">📍</div>
               <div>
                 <div className="contact-card-label">Location</div>
-                <div className="contact-card-value">Tech Learn HQ</div>
+                <div className="contact-card-value">Tech Fusion HQ</div>
                 <div className="contact-card-sub">Remote</div>
               </div>
             </div>
@@ -335,8 +335,8 @@ const ContactPage = () => {
 
         {/* FOOTER */}
         <div className="contact-footer-strip">
-          <div className="contact-footer-slogan">"Nothing is impossible when Tech Learn is with you"</div>
-          <div className="contact-footer-copy">© 2025 Tech Learn · All Rights Reserved</div>
+          <div className="contact-footer-slogan">"Nothing is impossible when Tech Fusion is with you"</div>
+          <div className="contact-footer-copy">© 2025 Tech Fusion  · All Rights Reserved</div>
         </div>
 
       </div>

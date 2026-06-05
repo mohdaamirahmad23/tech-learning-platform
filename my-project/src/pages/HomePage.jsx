@@ -84,7 +84,7 @@ const Homepage = () => {
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]"></div>
         <div className="container mx-auto max-w-4xl text-center relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Master <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">IT Domains</span>
+            Skill  <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Hub</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
             Discover your path in technology with our comprehensive learning platform. 
@@ -181,7 +181,7 @@ const Homepage = () => {
       {/* Footer */}
       <footer className="border-t border-white/10 py-8 px-6">
         <div className="container mx-auto text-center text-gray-400">
-          <p>© 2024 Tech Learn. Empowering the next generation of developers.</p>
+          <p>© 2024 Tech Fusion. Empowering the next generation of developers.</p>
         </div>
       </footer>
     </div>

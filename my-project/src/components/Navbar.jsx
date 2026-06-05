@@ -294,7 +294,7 @@ const Navbar = () => {
 <body>
   <div class="certificate">
     <div class="inner-border"></div>
-    <div class="logo">🎓 Tech Learn</div>
+    <div class="logo">🎓 Tech Fusion</div>
     <h1 class="title">Certificate of Completion</h1>
     <p class="subtitle">This is to certify that</p>
     <div class="username">${certificate.userName}</div>
@@ -317,7 +317,7 @@ const Navbar = () => {
     <div class="footer">
       <div class="signature">
         <div class="signature-line"></div>
-        <div class="signature-text">Tech Learn Team</div>
+        <div class="signature-text">Tech Fusion Team</div>
       </div>
       <div class="signature">
         <div class="signature-line"></div>
@@ -367,10 +367,10 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex items-center space-x-3 cursor-pointer group" onClick={handleHomeClick}>
               <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold text-sm">TL</span>
+                <span className="text-white font-bold text-sm">TF</span>
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                Tech Learn
+                Tech Fusion
               </span>
             </div>
 

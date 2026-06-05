@@ -21,7 +21,7 @@ router.get("/members", async (req, res) => {
           })
         : "Recently",
       badges: ["🌟 Member"],
-      skills: ["Tech Learn"],
+      skills: ["Tech Fusion"],
     }));
 
     res.json(formattedUsers);
